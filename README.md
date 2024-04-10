@@ -51,6 +51,7 @@ Open side by side:
     ```sh
     docker run \
         -it --rm --entrypoint='' \
+        -v $(pwd):/scratch \
         -w /scratch \
         lowess/helm bash
 
